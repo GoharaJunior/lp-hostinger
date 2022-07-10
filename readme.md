@@ -1,10 +1,10 @@
 <h1 align="center">
     <br>
-    <img src=".github/king-host.png" alt="Logo Draft Theme" width="200">
+    <img src=".github/king-host.png" alt="Logo Draft Theme">
     <br>
 </h1>
 <p align="center"> Visualize o tema:
-    <!-- Aqui vai o link do site em produção -->
+    https://goharajunior.github.io/lp-hostinger/
 </p>
 
 <div align="center" >
@@ -38,11 +38,11 @@ npm install
 # Instalar o Gulp (caso não o possua em sua máquina):
 npm install --global gulp-cli
 
-# Assistir a modificação dos arquivos em tempo real (compila e minifica os arquivos necessários):
+# Assistir a modificação dos seguintes arquivos: arquivos em tempo real
+# ✔ Compila e minifica os arquivos
+# ✔ Atualização de html e css em tempo real
 gulp
 
-# Fazer Commit para o repositório:
-npm run commit
 ```
 
 <p align="right"><kbd><b>
