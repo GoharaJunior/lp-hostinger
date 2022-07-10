@@ -1,0 +1,62 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11.9rem;
+    background-color: $purple;
+    display: flex;
+    z-index: 2;
+    .container {
+        @include flex(row, center, space-between);
+    }
+    nav {
+        ul {
+            display: flex;
+            li {
+                &:not(:first-child) {
+                    margin-left: 5.6rem;
+                }
+                &:hover {
+                    span {
+                        color: $yellow;
+                    }
+                    svg {
+                        stroke: $yellow;
+                    }
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-size: 1.6rem;
+                        margin-left: 1.6rem;
+                        line-height: 1.9rem;
+                        color: #FCFCFC;
+                        transition: color .2s ease-in;
+                    }
+                    svg {
+                        transition: stroke .2s ease-in;
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(600px) {
+        .container {
+            justify-content: center;
+        }
+        nav {
+            display: none;
+        }
+    } 
+    
+    @include responsive(480px) {
+        height: 80px;
+        .logo {
+            max-width: 140px;
+        }
+    }
+}
